@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bible Trivia Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <div id="start-screen">
+      <h1>Welcome to Bible Trivia!</h1>
+      <button class="start-button" id="startBtn">Start Game</button>
+    </div>
+    <div id="quiz" style="display:none; width: 100%;">
+      <div class="question" id="question"></div>
+      <div class="answers" id="answers"></div>
+      <div class="timer" id="timer"></div>
+      <div class="score" id="score"></div>
+      <div class="highscore" id="highscore"></div>
+      <button class="share-button" id="share-button" style="display:none">Share Your Score</button>
+    </div>
+  </div>
+
+  <!-- Audio Elements -->
+  <audio id="correct-sound" src="https://actions.google.com/sounds/v1/cartoon/clang_and_wobble.ogg"></audio>
+  <audio id="wrong-sound" src="https://actions.google.com/sounds/v1/cartoon/cartoon_boing.ogg"></audio>
+  <audio id="background-music" src="https://cdn.pixabay.com/download/audio/2022/10/19/audio_1b4d1e9f36.mp3?filename=bouncy-fun-game-109662.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+  </html>
